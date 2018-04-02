@@ -16,6 +16,18 @@ function misEquipos() {
 			mensaje = "Ese equipo no existe";
 			break;
 	}
-	
+
 	document.getElementById('demo').innerHTML = mensaje;
+}
+
+function GetValor(){
+	var valor1 = document.getElementByName("valor1").value;
+	var valor2 = document.getElementByName("valor2").value;
+
+	var resultado;
+
+	resultado = parseInt(valor1) + parseInt(valor2);
+
+	document.getElementById('demo').innerHTML = resultado;
+
 }
